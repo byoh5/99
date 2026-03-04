@@ -126,6 +126,91 @@ body[data-page] {
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 245, 232, 0.9));
 }
 
+.legal-v2 .table-wrap {
+  margin: 10px 0;
+  overflow-x: auto;
+}
+
+.legal-v2 .legal-table {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  border: 1px solid #eed3b8;
+  background: #fffdf9;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.legal-v2 .legal-table th,
+.legal-v2 .legal-table td {
+  border: 1px solid #f1dcc7;
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+  color: #3b312b;
+}
+
+.legal-v2 .legal-table thead th {
+  background: #fff4e5;
+  color: #4e3a2f;
+  font-weight: 800;
+}
+
+.legal-v2 .content-pre {
+  margin: 12px 0 0;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #efd7be;
+  background: #fff9f2;
+  color: #3e3228;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  font-family: "Fira Code", "Menlo", "Consolas", monospace;
+  font-size: 0.9rem;
+}
+
+.legal-v2 .tip-box {
+  margin-top: 10px;
+  padding: 11px 12px;
+  border-radius: 12px;
+  border: 1px solid #f2d9bc;
+  background: #fff7ed;
+}
+
+.legal-v2 .mini-note {
+  margin-top: 10px;
+  color: #5f4c40;
+  font-size: 0.95rem;
+}
+
+.legal-v2 .content-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.legal-v2 .content-grid.two-col {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.legal-v2 .content-grid > div {
+  border: 1px solid #f2dcc4;
+  border-radius: 12px;
+  padding: 12px;
+  background: #fffaf4;
+}
+
+.legal-v2 .quote-list li {
+  font-style: italic;
+}
+
+.legal-v2 .numbered-list {
+  padding-left: 20px;
+}
+
+.legal-v2 .checklist-list li {
+  list-style: "✓  ";
+}
+
 @keyframes legalCardIn {
   from {
     transform: translateY(8px);

@@ -127,6 +127,37 @@ body.v2-home {
   margin: 0;
 }
 
+.v2-content-hub {
+  display: grid;
+  gap: 12px;
+}
+
+.v2-content-hub p {
+  color: var(--v2-soft-ink);
+  line-height: 1.6;
+}
+
+.v2-content-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.v2-content-links a {
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--v2-accent-deep);
+  background: #fff8ef;
+  border: 1px solid var(--v2-line);
+  border-radius: 999px;
+  padding: 8px 12px;
+}
+
+.v2-content-links a:hover {
+  background: var(--v2-accent);
+  color: #fff;
+}
+
 .v2-eyebrow {
   margin: 0 0 8px;
   color: var(--v2-accent-deep);

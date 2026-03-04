@@ -9,6 +9,7 @@ A static web quiz service to help learners memorize multiplication tables throug
 - Keypad + 4-choice answer input modes
 - Browser TTS read-aloud support
 - Local history (up to 30 sessions) and mistake TOP list
+- Long-form learning content hub (curriculum + mistake remediation docs)
 
 ## Run Locally
 1. Open `index.html` in any modern browser.
@@ -22,6 +23,8 @@ No backend or build step is required.
 - `app-v2.js`: Main quiz v2 runtime
 - `legal-v2.css`: Legal/about pages visual theme extension
 - `guide.html`: Learning guide and FAQ
+- `curriculum.html`: 8-week multiplication curriculum and rubric
+- `mistake-book.html`: Mistake pattern encyclopedia and correction routines
 - `about.html`: Site/service overview
 - `terms.html`: Terms of service
 - `privacy.html`: Privacy policy
@@ -57,6 +60,8 @@ If you deploy to another domain, update URLs in:
 - `contact.html`
 - `privacy.html`
 - `guide.html`
+- `curriculum.html`
+- `mistake-book.html`
 - `terms.html`
 - `robots.txt`
 - `sitemap.xml`
