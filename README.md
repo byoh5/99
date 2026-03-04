@@ -46,6 +46,8 @@ Before submitting/reviewing in AdSense, confirm:
 5. Contact and operator info are visible (`about.html`, `contact.html`).
 6. Privacy/terms clearly disclose ads, cookies, and child-related guidance.
 7. `canonical` URLs match your real production domain.
+8. Child-directed or mixed-age traffic is reviewed in Search Console/AdSense and TFCD treatment is configured when applicable.
+9. Non-personalized ad request defaults are applied in the page AdSense loader snippet.
 
 ## Important
 This repository currently uses `https://byoh5.github.io` in canonical/sitemap URLs.
