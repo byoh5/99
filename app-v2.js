@@ -248,26 +248,12 @@ function saveSessions() {
 }
 
 function initLanguage() {
-  const saved = localStorage.getItem(LANG_KEY);
-  state.lang = I18N[saved] ? saved : "ko";
+  state.lang = "ko";
+  localStorage.setItem(LANG_KEY, state.lang);
   if (!el.mainLanguageSelect) return;
 
   el.mainLanguageSelect.value = state.lang;
-  el.mainLanguageSelect.addEventListener("change", () => {
-    const next = el.mainLanguageSelect.value;
-    state.lang = I18N[next] ? next : "ko";
-    localStorage.setItem(LANG_KEY, state.lang);
-    applyTranslations();
-    syncAdvancedToggleLabel();
-    syncSettingUI();
-    buildKeypad();
-    renderTabs();
-    renderHud();
-    renderQuestion();
-    renderResult();
-    renderHistory();
-    renderVisibility();
-  });
+  el.mainLanguageSelect.disabled = true;
 }
 
 function collectMistakePool() {

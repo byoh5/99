@@ -1747,16 +1747,11 @@ function applyTranslations() {
 }
 
 function initLanguage() {
-  const saved = localStorage.getItem(LANG_KEY);
-  state.lang = I18N[saved] ? saved : "ko";
+  state.lang = "ko";
+  localStorage.setItem(LANG_KEY, state.lang);
   if (legalLanguageSelect) {
     legalLanguageSelect.value = state.lang;
-    legalLanguageSelect.addEventListener("change", () => {
-      const next = legalLanguageSelect.value;
-      state.lang = I18N[next] ? next : "ko";
-      localStorage.setItem(LANG_KEY, state.lang);
-      applyTranslations();
-    });
+    legalLanguageSelect.disabled = true;
   }
 }
 
