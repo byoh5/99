@@ -211,6 +211,23 @@ body[data-page] {
   list-style: "✓  ";
 }
 
+.legal-v2 .video-frame-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  border: 1px solid #f0d8bf;
+  overflow: hidden;
+  background: #000;
+  margin: 10px 0 12px;
+}
+
+.legal-v2 .video-frame-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 @keyframes legalCardIn {
   from {
     transform: translateY(8px);

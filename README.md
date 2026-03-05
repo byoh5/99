@@ -10,6 +10,7 @@ A static web quiz service to help learners memorize multiplication tables throug
 - Browser TTS read-aloud support
 - Local history (up to 30 sessions) and mistake TOP list
 - Long-form learning content hub (curriculum + mistake remediation docs)
+- Embedded learning video page (YouTube-based guided study)
 
 ## Run Locally
 1. Open `index.html` in any modern browser.
@@ -25,6 +26,7 @@ No backend or build step is required.
 - `guide.html`: Learning guide and FAQ
 - `curriculum.html`: 8-week multiplication curriculum and rubric
 - `mistake-book.html`: Mistake pattern encyclopedia and correction routines
+- `learning-video.html`: Embedded learning video page with quiz-linked routine
 - `about.html`: Site/service overview
 - `terms.html`: Terms of service
 - `privacy.html`: Privacy policy
@@ -62,6 +64,7 @@ If you deploy to another domain, update URLs in:
 - `guide.html`
 - `curriculum.html`
 - `mistake-book.html`
+- `learning-video.html`
 - `terms.html`
 - `robots.txt`
 - `sitemap.xml`
