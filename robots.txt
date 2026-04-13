@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://byoh5.github.io/sitemap.xml
+Sitemap: https://times-table-quiz-playground.vercel.app/sitemap.xml

@@ -158,6 +158,47 @@ body.v2-home {
   color: #fff;
 }
 
+.v2-site-trust {
+  display: grid;
+  gap: 14px;
+}
+
+.v2-site-trust p {
+  color: var(--v2-soft-ink);
+  line-height: 1.6;
+}
+
+.v2-trust-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.v2-trust-card {
+  border: 1px solid var(--v2-line);
+  border-radius: 18px;
+  background: #fff8ef;
+  padding: 15px;
+}
+
+.v2-trust-card h3 {
+  margin: 0 0 8px;
+}
+
+.v2-trust-card p {
+  margin: 0 0 10px;
+}
+
+.v2-trust-card a {
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--v2-accent-deep);
+}
+
+.v2-trust-card a:hover {
+  color: var(--v2-accent);
+}
+
 .v2-eyebrow {
   margin: 0 0 8px;
   color: var(--v2-accent-deep);

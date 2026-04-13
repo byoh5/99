@@ -18,6 +18,31 @@ A static web quiz service to help learners memorize multiplication tables throug
 
 No backend or build step is required.
 
+## Deployment Policy
+- GitHub is used as source control only.
+- All preview and production deployments are served from Vercel.
+- Current production domain: `https://times-table-quiz-playground.vercel.app`
+
+## Vercel Deployment
+1. Keep this repository connected to the existing Vercel project.
+2. Leave the framework preset as `Other`.
+3. Set `SITE_URL` only when you want canonical/sitemap URLs to point to a custom production domain.
+   - Current default: `https://times-table-quiz-playground.vercel.app`
+   - Custom domain example: `https://gugudan.example.com`
+4. Push to GitHub, then let Vercel build and deploy from the connected repository.
+
+This repository includes:
+- `vercel.json`: Vercel build/output configuration
+- `scripts/build-static.mjs`: Copies the static site into `dist/` and rewrites SEO URLs
+- `package.json`: Local/Vercel build script entrypoint
+
+### Local Vercel-style Build
+```bash
+SITE_URL=https://your-project.vercel.app npm run build
+```
+
+The generated site is written to `dist/`.
+
 ## Pages
 - `index.html`: Main quiz app
 - `app-v2.css`: Main quiz v2 UI style
@@ -38,10 +63,6 @@ No backend or build step is required.
 - `script.js`: Legacy quiz runtime (kept for reference)
 - `legal.js`: Legal/about page i18n runtime
 
-## GitHub Pages Deployment
-- Deploy to the root of `byoh5.github.io`.
-- Keep all HTML/CSS/JS files at repository top level.
-
 ## AdSense Readiness Checklist
 Before submitting/reviewing in AdSense, confirm:
 1. `ads.txt` is publicly accessible at `/ads.txt`.
@@ -55,8 +76,9 @@ Before submitting/reviewing in AdSense, confirm:
 9. Non-personalized ad request defaults are applied in the page AdSense loader snippet.
 
 ## Important
-This repository currently uses `https://byoh5.github.io` in canonical/sitemap URLs.
-If you deploy to another domain, update URLs in:
+The source files currently use `https://times-table-quiz-playground.vercel.app` as the default canonical/sitemap URL.
+When Vercel builds the site, `scripts/build-static.mjs` can rewrite those URLs using `SITE_URL`, `VERCEL_PROJECT_PRODUCTION_URL`, or `VERCEL_URL`.
+If you move the production domain again, update `SITE_URL` in Vercel or revise the source URLs in:
 - `index.html`
 - `about.html`
 - `contact.html`
